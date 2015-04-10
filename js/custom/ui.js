@@ -161,7 +161,7 @@ function UserInterface()
 	this.buildUnit = function(unitList) {
 		var ulTag = '<ul>';
 		
-		ulTag += '<li>'+unitList+'</li>';
+		ulTag += '<li>See unit '+unitList+'.</li>';
 
 		ulTag += '</ul>';
 
