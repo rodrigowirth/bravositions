@@ -63,9 +63,9 @@ function UserInterface()
 			classAnswer = ' class="wrong"';
 			titleAnswer = ' title="You typed: '+wordHistory[0]+'"';
 		}
-
-
-		newTag = '<ul><li>'+preposition.sentence+'</li><li'+classAnswer+titleAnswer+'>'+preposition.anwser+'</li></ul>';
+		
+		var sentenceSplitted = preposition.sentence.split('___');
+		newTag = '<ul><li' + classAnswer + titleAnswer + '>' + sentenceSplitted[0] + '<b style="color: blue">' + preposition.anwser.toLowerCase() + '</b>' + sentenceSplitted[1] + '</li></ul>'
 		References.wordHistoryList.prepend(newTag);
 	};
 

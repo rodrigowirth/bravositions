@@ -191,7 +191,7 @@ header {
 
 .historyBox li {
 	display: inline-block;
-	width: 30%;
+	width: 90%;
 	text-align: center;
 	margin-top: 2px;
 }
@@ -201,9 +201,9 @@ header {
 	overflow: auto;
 }
 
-#wordWrapper > ul:first-child {
+/*#wordWrapper > ul:first-child {
 	font-weight: bold;
-}
+}*/
 
 #wordWrapper ul li{
 	margin-left: 15px;
