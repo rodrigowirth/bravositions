@@ -85,7 +85,7 @@ header {
 	background: url("../images/bravighost.png") no-repeat;
 	background-position: center;
 	background-size: 300px;
-	width: 600px;
+	width: 800px;
 	margin: 20px auto;
 } 
 
@@ -161,6 +161,8 @@ header {
 	margin: 4px;
 	margin-top: 40px;
 	border: black 2px solid;
+    width: 500px;
+    margin-left: 150px;
 
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -611,7 +613,7 @@ footer img {
 }
 
 #abouts > div {
-	width: 1050px;
+	width: 100%;
 	margin: 0 auto;
 }
 
