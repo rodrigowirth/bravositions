@@ -297,15 +297,15 @@ header {
 }
 
 #book span {
-	background: url("../images/buttonsprites.png") no-repeat;
+	background: url("../images/books.png") no-repeat;
 }
 
 #book .r1 {
-	background-position: -10px -31px;
+	background-position: 5px 0px;
 }
 
 #book .r2 {
-	background-position: -64px -31px;
+	background-position: -35px 0px;
 }
 
 #github {
@@ -314,16 +314,16 @@ header {
 
 .bookIcon {
 	position: absolute;
-	width: 50px;
-	height: 31px;
-	background: url("../images/buttonsprites.png") no-repeat;
-	margin-left: -50px;
+	width: 38px;
+	height: 32px;
+	background: url("../images/books.png") no-repeat;
+	margin-left: -40px;
 }
 #r1 .bookIcon {
-	background-position: -5px 0px;
+	background-position: 5px 0px;
 }
 #r2 .bookIcon {
-	background-position: -60px 0px;
+	background-position: -35px 0px;
 }
 #gap{
 	height: 70px;
