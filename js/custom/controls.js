@@ -36,7 +36,7 @@ function Controls() {
 				controls.userEnter();
 			else if(e.which == 32) {
 				e.preventDefault();
-				//controls.playVoice();
+				controls.playVoice();
 			}
 			else if(e.which == 17 || e.which == 18) {
 				e.preventDefault();
@@ -95,7 +95,7 @@ function Controls() {
 		});
 
 		References.replay.click(function() {
-			//controls.playVoice();
+			controls.playVoice();
 		});
 
 		References.book.click(function() {
@@ -301,7 +301,7 @@ function Controls() {
 	};
 
 	this.updateUI = function() {
-		//this.playVoice();
+		this.playVoice();
 		userInterface.resetUnit();
 		userInterface.incrementWord();
 		this.currentWordCounter+=1;
@@ -365,10 +365,10 @@ function Controls() {
 		userInterface.hideResults();
 	};
 
-	/*this.playVoice = function(word) {
+	this.playVoice = function(word) {
 		this.word.voice.load();
 		this.word.voice.play();
-	};*/
+	};
 
 	//BEWARE, HERE BE DRAGONS
 	//made this in a hurry
@@ -401,12 +401,12 @@ function Controls() {
 }
 
 
-function Preposition(sentence,anwser,book,unit) {
+function Preposition(sentence,anwser,book,unit, phrase) {
 	this.sentence = sentence;
 	this.anwser = anwser;
 	this.book = book;
 	this.unit = unit;
-	//this.voice = new Audio("voices/"+infinitive+".mp3");
+	this.voice = new Audio("voices/"+phrase+".mp3");
 }
 
 function Book(color){
@@ -431,8 +431,9 @@ function loadPrepositions(prepositionBucket) {
 		        var anwser = $(this).find('Answer').text();
 		        var book = $(this).find('Book').text();
 		        var unit = $(this).find('Unit').text();
+		        var phrase = $(this).find('Phrase').text();
 		        
-		        var newPreposition = new Preposition(sentence,anwser,book,unit);
+		        var newPreposition = new Preposition(sentence,anwser,book,unit, phrase);
 		        if(book == "Red"){
 		        	prepositionBucketRed.push(newPreposition);
 		        }else{
