@@ -405,8 +405,9 @@ function Preposition(sentence,anwser,book,unit, phrase) {
 	this.sentence = sentence;
 	this.anwser = anwser;
 	this.book = book;
+	console.log(book);
 	this.unit = unit;
-	this.voice = new Audio("voices/"+phrase+".mp3");
+	this.voice = new Audio("voices/" + book + "/" + phrase + ".mp3");
 }
 
 function Book(color){
